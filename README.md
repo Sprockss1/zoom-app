@@ -1,6 +1,6 @@
 # zoom-oauth-sample-app
 
-> This is a sample app that uses oauth to call Zoom's API. It uses the request node module to make http calls. 
+> This is a sample app that uses oauth to call Zoom's API and store data in mongodb database. It uses the request node module to make http calls. 
 
 ## Getting Started
 
