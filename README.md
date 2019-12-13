@@ -39,9 +39,8 @@ Clone the repo using git clone.
 
 > Go to localhost:3000 in the browser
 
+> Data displayed in the localhost:3000 will be stored in my mongodb dabatase
 
 ### For more Information about Zooms API and OAuth
 Documentation is available on the [Zoom Oauth docs site](https://marketplace.zoom.us/docs/guides/authorization/oauth)
 
-## Support
-For any questions or issues, please visit our new Community Support Forum at https://devforum.zoom.us/
