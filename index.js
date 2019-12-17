@@ -24,10 +24,12 @@ const Meeting = mongoose.model('Meeting',
 var email;
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded());
+
 app.post('/', (req, res) => {
     email = req.body.email_id;
-  console.log(email);
-
+    console.log(email);
+    res.redirect('http://localhost:3000');
+});
 app.get('/', (req, res) => {
   
   //this will check if the code parameter is in the url, if not the most likely case is that this is the user's inital visit to oauth and we need to redirect them (Step 1)
@@ -95,6 +97,6 @@ app.get('/', (req, res) => {
   //STEP 2
   //no code provided, so redirect the user to get the code
   res.redirect('https://zoom.us/oauth/authorize?response_type=code&client_id=' + config.clientID + '&redirect_uri=' + config.redirectUrl);
-});});
+});
 
 app.listen(3000, () => console.log('Zoom api oauth sample app listening on port 3000!'))
